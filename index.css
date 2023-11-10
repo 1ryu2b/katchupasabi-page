@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&family=Splash&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&family=Splash&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grechen+Fuemen&display=swap');
 body, ul, li, a {
     margin: 0;
     padding: 0;
@@ -27,7 +28,7 @@ body, ul, li, a {
 
 .logo a {
     color: #000000;
-    font-size: 26px;
+    font-size:2rem;
     font-weight: bold;
     font-family:'Kalam', cursive; 
 
@@ -38,10 +39,12 @@ body, ul, li, a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-right: -9rem;
+
 }
 
 .menu li {
-    margin-right: 20px;
+    margin-right: 2rem;
 }
 
 .menu a {
@@ -72,9 +75,9 @@ body, ul, li, a {
     content: "";
     background: linear-gradient(48deg, #000, transparent, transparent, #000);
     z-index: -1;    
-    font-size: 70px;
+    font-size: 7rem;
     margin-bottom: 100px;
-    font-family: 'Splash', cursive;
+    font-family: 'Grechen Fuemen', cursive;
     color: #ffffff;
     
 }
@@ -146,12 +149,37 @@ footer .social-icons a {
 
 @media(max-width:768px) {
 
-    .home h1{
-        font-size: 2rem;
+    
+
+
+    .logo .menu{
+        position:relative;  
+
     }
 
-    .container p{ 
-        font-size:1.4rem;        
+    .logo a{
+        font-size:1.4rem;
+    }
+
+    .home h1{
+        font-size: 3.3rem;
+    }
+
+    .container p{
+        font-size: 1.5rem;
+    }
+
+    footer{
+        flex-direction: column;
+    }
+
+    .container { 
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 18px;       
     }
 
     .footerr{
@@ -168,6 +196,7 @@ footer .social-icons a {
     .img{
         width:3rem; 
     }
+
     .menu{
         margin:0; 
         position: relative; 
@@ -177,7 +206,8 @@ footer .social-icons a {
 
     
     .menu li{
-        margin-inline: 4px;
+        margin-inline: 0.4rem;
+        
     }
 
 }
