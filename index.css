@@ -186,9 +186,9 @@ footer .social-icons a {
     padding: 1px 18px;       
     }
 
-    .footerr{
-        height: -1rem;
-        margin: -1rem; 
+    footer{
+        position:relative; 
+        font-size: 1rem;
     }
 
     .whats{
